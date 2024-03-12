@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            Welcome to the Interactive ABCs of CSS Technology learning Website
+        </div>
+        <div class="head">
+            Click on the buttons below to reveal and learn the CSS technology features of the corresponding letters
+        </div>
+        <div class="picture-group">
+            <div class="item" id="item-1">
+                <img src="./img/css-letter-a.png" alt="Letter A">
+                <button onclick="hideResult(this)">Hide Result</button>
+            </div>
+            <div class="item" id="item-2">
+            <img src="./img/css-letter-b.png" alt="Letter B">
+                <button onclick="hideResult(this)">Hide Result</button>
+            </div>
+            <div class="item" id="item-3">
+                <img src="./img/css-letter-c.png" alt="Letter C">
+                <button onclick="hideResult(this)">Hide Result</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <!-- Button to show A, B, and C respectively -->
+            <button onclick="showResult('item-1')">Show A</button>
+            <button onclick="showResult('item-2')">Show B</button>
+            <button onclick="showResult('item-3')">Show C</button>
+        </div>
+    </div>
+</body>

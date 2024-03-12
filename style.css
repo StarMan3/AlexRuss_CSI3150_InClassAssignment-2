@@ -1,0 +1,83 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    /* no scrolling */
+    overflow: hidden;
+}
+
+.head {
+    height: 80px;
+    background-color: #f1f3f4;
+    margin: 10px;
+    text-align: center;
+
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line if you also want to center the text horizontally */
+    align-items: center; /* This will now work to center the text vertically */
+
+    font-size: x-large;
+}
+
+.picture-group {
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+.picture-group img {
+    display: block;
+}
+
+.item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.item button {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #D2E3FC;
+    font-size: large;
+    border: none;
+}
+
+
+/* Dark mode styles because why not */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #202124;
+        color: white;
+    }
+
+    .head {
+        background-color: #333;
+    }
+
+    .item {
+        border-color: #333;
+        background-color: #333;
+    }
+    
+    button {
+        background-color: #34A853;
+        color: #F1F3F4
+    }
+}
